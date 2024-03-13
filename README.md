@@ -5,7 +5,8 @@ System is the core backend system that is powered by Python.
 Install Python and these databases
 
 1. Python 3.9.11
-   - Install 3.9.11: pyenv install 3.9.11
+   - Install pyenv refer: https://github.com/pyenv/pyenv
+   - Install python version 3.9.11 or later: pyenv install 3.9.11
    - Switch to 3.9.11: pyenv global 3.9.11 => check we are using it: python -V == 3.9.11
    - Install pipenv for 3.9.11: pip install pipenv
    - Create .venv for 3.9.11: pipenv install
@@ -15,8 +16,13 @@ Install Python and these databases
     * System will automatically create the database and collections necessary.
 
 
-#### 2.0 create local configuration files
+## 2.0 create local configuration files
 ```
 cd $REPOSITORY_ROOT
 cp .env.sample  .env
+```
+
+## 3.0 Run app
+```
+pipenv run python main.py
 ```
